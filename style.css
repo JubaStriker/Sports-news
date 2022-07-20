@@ -1,0 +1,97 @@
+/* --------------------
+        fonts
+---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------
+        top portion
+----------------------*/
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.head {
+    display: flex;
+    width: 1321px;
+    height: 646px;
+    background-color: black;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.top-section {
+    padding-top: 80px;
+    padding-left: 90px;
+}
+
+
+.top-title {
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+
+.top-text {
+    font-size: 16px;
+    color: white;
+}
+
+.live-button {
+    height: 40px;
+    width: 120px;
+    background-color: red;
+    padding-left: 18px;
+    padding-top: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+}
+
+.banner-image {
+    width: 581px;
+    height: 613px;
+    margin-left: 20px;
+    padding-top: 33px;
+}
+
+
+
+/* ----------------------
+        Media query
+------------------------- */
+
+@media only screen and (min-width:688px) and (max-width:915px) {
+    .container {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width:688px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .head {
+        display: flex;
+        width: auto;
+        height: auto;
+        background-color: black;
+        border-radius: 30px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .top-section {
+        padding-top: 10px;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+
+}
