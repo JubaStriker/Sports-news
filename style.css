@@ -222,6 +222,10 @@ body {
 
 }
 
+.icons a {
+    color: aliceblue;
+}
+
 /* ----------------------
         Media query
 ------------------------- */
@@ -343,7 +347,7 @@ body {
     .footer {
         margin-top: 700px;
         width: 100%;
-        height: 444px;
+        height: 500px;
         background-color: black;
     }
 
