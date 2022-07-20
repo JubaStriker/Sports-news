@@ -79,47 +79,71 @@ body {
     align-items: flex-start;
 }
 
-.left-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.nav {
+    float: left;
     background-color: black;
-    margin-top: 40px;
-    border-radius: 10px;
-
+    height: 312px;
+    width: 312px;
+    border-radius: 15px;
+    position: static;
 }
 
-.left-box a {
-    text-decoration: none;
-
-}
-
-.left-buttons {
-    height: 40px;
-    width: 220px;
-    background-color: white;
-    padding-top: 18px;
-    border-radius: 5px;
-    margin-top: 20px;
+.button {
+    text-align: center;
     color: black;
-    margin-left: 30px;
+    font-weight: bold;
+    margin-left: 45px;
     margin-right: 30px;
-    text-align: center;
-}
-
-.sel-button {
+    margin-top: 30px;
     height: 40px;
     width: 220px;
-    background-color: red;
     padding-top: 18px;
-    border-radius: 5px;
-    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.button:hover {
+    border: 2px solid red;
+}
+
+.s-button:hover {
+    border: 2px solid white;
+}
+
+.s-button {
+    text-align: center;
     color: white;
+    font-weight: bold;
+    margin-left: 45px;
+    margin-right: 30px;
+    margin-top: 30px;
+    height: 40px;
+    width: 220px;
+    padding-top: 18px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.button a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: bold;
     margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 30px;
-    text-align: center;
+    margin-top: 30px;
+    height: 40px;
+    width: 220px;
+    padding-top: 18px;
 }
+
+.s-button a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
 
 .blogs img {
     height: 175px;
@@ -139,19 +163,31 @@ body {
 /* ----------------------
         Media query
 ------------------------- */
-@media screen and (min-width:916px) {
+
+/*------------------------------------ PC screen --------------------------------------------*/
+@media screen and (min-width:992px) {
     .mobile-image {
+        display: none;
+    }
+
+    .nav-tab {
         display: none;
     }
 
 }
 
-@media only screen and (min-width:688px) and (max-width:915px) {
+/* -----------------------------------Tablet screen------------------------------------------ */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
     .container {
         flex-direction: column;
     }
 
     .mobile-image {
+        display: none;
+    }
+
+    .nav {
         display: none;
     }
 
@@ -165,9 +201,60 @@ body {
         justify-content: center;
     }
 
+    .mid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-tab {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        margin-left: 45px;
+        margin-right: 30px;
+        margin-top: 30px;
+        height: 40px;
+        width: 220px;
+        padding-top: 18px;
+        background-color: white;
+        border-radius: 10px;
+        border: 2px solid lightslategray;
+    }
+
+    .button:hover {
+        border: 2px solid red;
+    }
+
+    .s-button:hover {
+        border: 2px solid black;
+    }
+
+    .s-button {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        margin-left: 45px;
+        margin-right: 30px;
+        margin-top: 30px;
+        height: 40px;
+        width: 220px;
+        padding-top: 18px;
+        background-color: red;
+        border-radius: 10px;
+    }
+
+
+
+
 
 }
 
+/* -----------------------------------Mobile screen------------------------------------------ */
 @media only screen and (max-width:688px) {
     .container {
         flex-direction: column;
@@ -196,8 +283,10 @@ body {
     }
 
     .mobile-image {
-        padding-left: 130px;
         padding-top: 10px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
     }
 
     .blogs {
@@ -209,6 +298,22 @@ body {
         grid-column-gap: 10px;
         justify-content: center;
     }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .nav-tab {
+        display: none;
+    }
+
+    .mid {
+        display: flex;
+        flex-direction: column;
+    }
+
 
 
 
