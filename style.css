@@ -64,6 +64,12 @@ body {
 /* ----------------------
         Media query
 ------------------------- */
+@media screen and (min-width:916px) {
+    .mobile-image {
+        display: none;
+    }
+
+}
 
 @media only screen and (min-width:688px) and (max-width:915px) {
     .container {
@@ -91,6 +97,17 @@ body {
         padding-top: 10px;
         padding-left: 10px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-image {
+        display: none;
+    }
+
+    .mobile-image {
+        padding-left: 130px;
+        padding-top: 10px;
     }
 
 
