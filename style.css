@@ -33,6 +33,7 @@ body {
 .top-section {
     padding-top: 80px;
     padding-left: 90px;
+
 }
 
 
@@ -40,6 +41,7 @@ body {
     font-size: 70px;
     font-weight: bold;
     color: white;
+
 }
 
 .top-text {
@@ -58,6 +60,11 @@ body {
     color: white;
 }
 
+.live-button:hover {
+    border: 4px solid white;
+}
+
+
 .banner-image {
     width: 581px;
     height: 613px;
@@ -71,12 +78,10 @@ body {
 
 .mid {
     margin-top: 100px;
-    /* display: grid; */
-    /* grid-template-columns: repeat(2, 1fr 3fr); */
-    /* grid-gap: 30px; */
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+    height: 700px;
 }
 
 .nav {
@@ -144,6 +149,9 @@ body {
     font-weight: bold;
 }
 
+/* ---------------
+    Blogs design
+    -------------- */
 
 .blogs img {
     height: 175px;
@@ -160,6 +168,60 @@ body {
     justify-content: center;
 }
 
+.match-blog {
+    border: 2px solid lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.match-blog:hover {
+    border: 2px solid red;
+}
+
+.uc-match {
+    display: flex;
+    align-items: center;
+}
+
+.uc-match img {
+    height: 56px;
+    width: 93px;
+}
+
+
+/* footer */
+.goal {
+    border: 0px solid saddlebrown;
+    background-color: black;
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer-text {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.footer-subtext {
+    font-size: 16px;
+    text-align: center;
+    color: gray;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 90px;
+    font-size: 40px;
+
+}
+
 /* ----------------------
         Media query
 ------------------------- */
@@ -174,6 +236,10 @@ body {
         display: none;
     }
 
+    .footer-subtext-mbl {
+        display: none;
+    }
+
 }
 
 /* -----------------------------------Tablet screen------------------------------------------ */
@@ -181,6 +247,22 @@ body {
 @media only screen and (min-width:688px) and (max-width:992px) {
     .container {
         flex-direction: column;
+    }
+
+    .head {
+        display: flex;
+        width: 100%;
+        height: 1000px;
+        background-color: black;
+        border-radius: 30px;
+        justify-content: center;
+    }
+
+    .banner-image {
+        width: 100%;
+        height: 613px;
+        margin-left: 20px;
+        padding-top: 33px;
     }
 
     .mobile-image {
@@ -204,6 +286,13 @@ body {
     .mid {
         display: flex;
         flex-direction: column;
+    }
+
+    .banner-image {
+        width: 70%;
+        height: 613px;
+        margin-left: 20px;
+        padding-top: 33px;
     }
 
     .nav-tab {
@@ -247,6 +336,21 @@ body {
         background-color: red;
         border-radius: 10px;
     }
+
+    /* ---------------------------
+              Footer Design
+    ----------------------------- */
+    .footer {
+        margin-top: 700px;
+        width: 100%;
+        height: 444px;
+        background-color: black;
+    }
+
+    .footer-subtext-mbl {
+        display: none;
+    }
+
 
 
 
@@ -307,11 +411,30 @@ body {
 
     .nav-tab {
         display: none;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .mid {
         display: flex;
         flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer {
+        margin-top: 1600px;
+    }
+
+    .footer-subtext {
+        display: none;
+    }
+
+    .footer-subtext-mbl {
+        display: flex;
+        flex-direction: column;
+        color: gray;
+        align-items: center;
     }
 
 
